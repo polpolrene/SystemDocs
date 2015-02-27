@@ -6,13 +6,9 @@ Benutzer
 
 Users do not require to have their account managed, even in a secured manner.
 
-Während das SAFE Netzwerk safecoins erstellt
+Safecoins die durch das SAFE Netzwerk generiert werden, können von Benutzern genutzt werden um anonym Netzwerk Resourcen zu erwerben. Das kann entweder durch Kauf oder Tausch von Safecoins erfolgen.
 
-**As the SAFE Network creates safecoins, users may use these to purchase network resources in an anonymous manner. This uses an exchange or purchasing mechanism.**
-
-Rang ist ein interner Messwert der verlorenen versus der gespeicherten Daten eines Vaults.Diese Methode wird benutzt um Netzwerk Befugnis zu verwalten, zusätzlich zur Befugnis die ein Vault in Relation hat
-
-**Rank is an internal measure of the Vault's stored versus lost data. This is used to manage network authority in addition to the authority a Vault has in relation to its closeness to an address.**
+Rang ist ein interner Messwert der verlorenen versus der gespeicherten Daten eines Vaults. Diese Methode wird benutzt um Netzwerk Authorität zu verwalten, zusätzlich zur Authorität die ein Vault in Relation zur Nähe der Adresse hat.
 
 Dieser Rang wird benutzt um die safecoin Verdienstraten der Vautls zu regulieren. Diese Rate kann bei Überversorgung sinken und während einer gestiegenen Nachfrage nach Resource steigen.
 

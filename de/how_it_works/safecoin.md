@@ -1,68 +1,42 @@
 #Safecoins
 
-Safecoins can be earned, traded or purchased. The value of safecoins will be determined by market, through the combination of supply and demand.
+Safecoins können verdient, getauscht oder gekauft werden. Der Wert von safecoins wird durch den Markt festgelegt, durch eine Kombination aus Nachfrage und Angebot.
 
-## Market price
-The number of safecoins in circulation will increase based on network use. Almost all early safecoin holders will be farmers with this supply of resource creating both liquidity
-and distribution of wealth. It is anticipated that almost all users will possess at least a few safecoins in their wallet.
+## Markt Preis
 
-Users may trade their safecoin for services on the network, or for cash (or another digital currency) using an exchange.
-The ratio of safecoin being saved (left in new wallets) versus the ratio being issued to Farmers will produce a price point. This point will be the market value of safecoin
+Die Anzahl an Safecoins im Umlauf erhöht sich mit steigender Nutzung des Netzwerk. Fast alle frühen Besitzer von Safecoins werden Farmer sein die mit dieser Bereitstellung von Resourcen sowohl Liquidität als auch Verteilung Vermögen erzeugen. Es wird davon ausgegangen das fast alle Benutzer mindestens ein paar Safecoins in ihrer Geldbörse haben werden.
 
-## Resources and currency
+Benutzer können ihre Safecoins gegen Dienste im Netzwerk, Geld (oder andere digitale Währungen) tauschen in dem sie eine Börse benutzen. Der Anteil an Safecoins die gespeichert werden (in neuen Geldbörsen) gegenüber dem Anteil der Farmern zugeteilt wird bestimmt den Preispunkt. Dieser Preispunkt wird den Marktwert von Safecoins festlegen.
 
-Safecoins are used to access services on the SAFE Network. This encourages constant reuse which results in increasing demand for a finite resource. As a result, the value of the safecoins increases over time. While the coins themselves increase in value, the amount of network services (resources) they buy also increases. This is shown in figure 2.
+
+
+## Resourcen und Währung
+
+Safecoins werden genutzt um Zugang zu Services im SAFE Netzwerk zu erhalten. Das fördert eine konstante Wiederverwendung was in einer gesteigerten Nachfrage nach einer endlichen Resource resultiert was dazu führt das der Wert der Safecoins mit der Zeit steigt. Während die Safecoins ansich im Wert steigen, steigt auch die Zahl der Netzwerk Dienste (Resourcen) die sie kaufen. Siehe dazu Bild 2.
+
 
 ![](safecoin resources.png)
 
-## Farming rates
+## Farming Raten
 
-Farming is a process whereby users provide resource
-(storage space, CPU and bandwidth) to the network.
+Farming ist ein Prozess bei dem Benutzer dem Netzwerk Resourcen (Festplattenplatz, Prozessor und Bandbreite) bereistellen.
 
-As figure 1 demonstrates, the safecoin earning algorithm is based on a Sigmoid curve,
-in that all vaults earn, slowly at first and the rate
-increases as the farmer stores up to the network
-average. The earning rate also takes into account
-the rank of the vault, a process whereby the network
-scores the usefulness of each node from 0
-(being the worst) to 1 (the best). The safecoin
-farming rate is ultimately the result of the network
-rate, a balance of the demand and supply
-on the network, multiplied by the vault rank.
-The network rate will start to level at 20% above
-average, thus discouraging massive vaults which
-would bring centralisation to the network’s farming
-process. Safecoin is allocated to them by the
-network and is paid to the successful node as
-data is retrieved from it (GETS), as opposed to
-when it is stored (PUTS).
+Wie in Bild 1 zu sehen, basiert der Safecoin Verdienst Algorithmus auf der Sigmoid Kurve insofern das alle Vaults verdienen, zuerst langsam. Die Rate steigt wenn der Farmer mehr in Richtung Netzwerk Durchschnitt speichert. Die Verdienst Rate berücksichtigt ausserdem den Rang des Vaults, ein Prozess bei dem das Netzwerk die Nützlichkeit jede Node von 0 (schlechteste) bis 1 (beste) bewertet. Die Safecoin Farming Rate ist letztlich das Result der Netzwerk Rate, die Balance zwischen Angebot und Nachfrage im Netzwerk, multipliziert mit dem Rang des Vaults.  Die Netzwerk Rate wird sich bei 20$ prozent über Durchschnitt anfangen auszugleichen und damit riesige Vaults entmutigen welche Zentralisierung in den Farming Prozess würden. Safecoin wird ihnen vom Netzwerk zugeteilt und wird den erfolgreichen Nodes ausgezahlt wenn Daten von ihnen abgerufen werden (GETS), im Gegensatz dazu, wenn Daten gespeichert werden (PUTS).
+
 
 ![](safecoin farming speed.png)
 
-The network automatically increases farming
-rewards as space is required and reduces them
-as space becomes abundant. Data is evenly distributed on the network and therefore farmers
-looking to maximise their earnings may do so
-by running several average performance nodes
-rather than one high specification node.
+Das Netzwerk erhöht die farming Vergütung wenn Platz erfoderloch ist und senkt ihn wenn Platz im Überfluss vorhanden ist. Daten sind gleichmäßig über das Netzwerk verteilt, daher sollten Farmer die ihren Verdienst maximieren wollen mehrere durchschnittliche Nodes betreiben anstatt einer hoch performanenten Node.
 
-## Safecoin transfer mechanism
-Unlike bitcoin, the SAFE Network does not use
-a blockchain to manage ownership of coins. Conversely,
-the SAFE Network’s Transaction Managers
-are unchained, meaning that only the past
-and current coin owner is known. It is helpful to
-think of safecoin as digital cash in this respect.
 
-One of the major problems any virtual currency
-or coin must overcome is the ability
-to avoid double spending. Within the SAFE
-Network, transfer of data, safecoin included,
-is atomic, using a cryptographic signature to
-transfer ownership.
+## Safecoin Transfer Mechanismus
+Im Gegensatz zu bitcoin nutzt das SAFE Netzwerk keine blockchain um den Besitz der safecoins verwalten. Die Transaction Manager des SAFE Netzwerk sind entgegengesetzt; unverkettet, was bedeutet das lediglich der letzte und der aktuelle Besitzer bekannt sind. In dieser Hinsicht ist es sinnvoll Safecoins wie digitales Bargeld zu betrachten.
 
-Safecoin, the currency of the SAFE network, is generated in response to network use. As data is stored, or as apps are created and used, the network generates safecoins, each with their own  unique ID. As these coins are divisible, each new denomination is allocated a new and completely unique ID.
+Eines der größten Probleme jeder virtuellen Währung ist es das Problem der doppelten Ausgabe (double spending) zu verhindern. Innerhalb des SAFE Netzwerk ist der Transfer von Daten, inklusive Safecoin, atomar, unter Verwendung einer kryptographischen Signatur um den Besitz zu übertragen.
+
+Safecoin, die Währung des SAFE Netzwerk wird in Relation zur Netzwerk Nutzung generiert. Wenn Daten gespeichert werden, oder Programme erstellt und genutzt werden, generiert das Netzwerk Safecoins, jedes mit seiner eigenen ID. Da diese Coins teilbar sind erhält jede Stückelung eine neue und komplett eindeutige ID.
+
+Wenn das Netzwerk den Benutzern Safecoins zuweist, kann nur dieser spezielle Benutzer den Besitz mit Hilfe der kryptographischen Signatur übertragen. Für illustrative Zwecke, wenn Alice mit dem Client einen Safecoin an Bob bezahlt reicht sie einen Zahlungsanfrage ein. Der Transaction Manager überprüft ob Alice der derzeitge Besitzer der Safecoin ist indem er ihre öffentlichen Schlüssel heranzieht und bestätigt das sie von dem richtigen und korrespondieren privaten Schlüssel signiert wurde. Der Transaction Manager akzeptiert nur eine signierte Nachricht vom existierenden Besitzer. Das belegt zweifelsfrei das Alice der Besitzer der safecoin ist und der Besitz dieser speziellen Safecoin wird an Bob übertragen. Von nun an ist lediglich Bob dazu in der Lage die Safecoin an einen anderen Besitzer zu übertragen. Dieser Prozess ist in Bild 3 dargestellt.
 
 As the coins are allocated to users by the network, only that specific user can transfer ownership of that coin by cryptographic signature. For illustrative purposes, when Alice pays a coin to Bob via the client, she submits a payment request. The Transaction Managers check that Alice is the current owner of the coin by retrieving her public key and confirming that it has been signed by the correct and corresponding private key. The Transaction Managers will only accept a signed message from the existing owner. This proves beyond doubt that Alice is the owner of the coin and the ownership of that specific coin is then transferred to Bob and now only Bob is able to transfer that coin to another user.This process is highlighted in figure 3.
 

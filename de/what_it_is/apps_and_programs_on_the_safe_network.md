@@ -9,7 +9,6 @@ Hier sind einige Beispiele für die Art von Programmen die im SAFE Netzwerk genu
 * Webseiten
 * VoIP
 * soziale Netzwerke
-* Document processing of any data provided by any program
 * verteilte Datenbanken
 * Dokumenten oder Vertrags Signierung
 * Jeder existierende Service der im Internet existiert

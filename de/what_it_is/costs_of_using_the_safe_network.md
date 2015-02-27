@@ -8,7 +8,7 @@ Der SAFE client ist ein Programm um sich am SAFE Netzwerk anzumelden und Zugiff 
 
 Mit diesen Details authentifiziert das SAFE Netzwerk den Benutzer und entschlüsselt seinen Datenatlas welcher ihm Zugriff auf alle seine verschlüsselten Daten gewährt.
 
-Der SAFE client ist ein kleines, plattformübergreifendes (Windows, Linux, Mac) und ressourcen schonendes Programm das die Performance des Computers nicht beeinträchtigt. Nachdem Du Dich durch den SAFE client authentifiziert hast musst Du keine weiteren Passwörter oder Schlüssel angeben um auf andere Daten oder Programme im SAFE Netzwerk zuzugreifen.
+Der SAFE client ist ein kleines, plattformübergreifendes (Windows, Linux, Mac, Android) und ressourcen schonendes Programm das die Performance des Computers nicht beeinträchtigt. Nachdem Du Dich durch den SAFE client authentifiziert hast musst Du keine weiteren Passwörter oder Schlüssel angeben um auf andere Daten oder Programme im SAFE Netzwerk zuzugreifen.
 
 Passwörter oder Zugangsdaten werden nicht vom SAFE client zwischengespeichert oder im Netzwerk gespeichert. Das bedeutet das keinerlei Informationen über Dich oder Deinen Zugang auf dem Computer verbleiben den Du für den Zugang zum SAFE Netzwerk verwendet hast. Du kannst Dich von einem anderen Computer aus am SAFE Netzwerk anmelden, wenn dieser den SAFE client installiert hat.
 

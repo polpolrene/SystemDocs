@@ -1,48 +1,53 @@
 # Vaults
-Vaults are created on a user's computer when they install the MaidSafe client and join the SAFE Network.
+Vaults werden auf dem Computer des Benutzers erstellt wenn sie den SAFE client installieren und dem SAFE Netzwerk beitreten.
 
-The Vault on the user's computer can not be seen by the user. Instead the user sees a virtual mounted drive that provides access to their distributed data.
+Der Vault auf dem Computer des Benutzers kann nicht vom Benutzern gesehen werden. Stattdessen sieht er ein virtuell eingebundes Laufwerk das ihm Zugang zu seinen verteilten Daten gibt.
 
-When a user creates or alters files on their virtual drive, the file goes through several processes to ensure the file is secure and makes best use of the SAFE Network resources.
+Wenn ein Benutzer Dateien auf seinem virtuellen Laufwerk erstellt oder verändert, geht die Datei durch verschiedene Prozesse um sicherzustellen dass das File sicher ist und stellt eine bestmögliche Nutzung der SAFE Netzwerk Resourcen sicher.
 
-## Vault persona
-Vaults can have a different data handling persona. Each persona serves a different role in the SAFE Network.
+
+
+## Vault Rolle
+Vaults können verschiedene Datenhandhabungsrollen haben. Jede Rolle hat eine bestimmte Funktion im SAFE Netzwerk.
+
 * **Client managers**<br/>
-Client manager Vaults receives the chunks of self encrypted data from the user's Vault.
+Client Manager Vaults erhalten die Teile der selbst verschlüsselten Daten vom Vault des Benutzers.
 * **Data managers**<br/>
-These Vaults manage the chunks of data from the Client manager Vaults. They also monitor the status of the SAFE Network.
+Diese Vaults verwalten die Datenteile vom Client Manager Vault. Sie monitoren ausserdem den Status des SAFE Netzwerk.
 * **Data holders**<br/>
-Data holder Vaults are used to hold the chunks of data.
+Data holder Vaults halten die Datenteile vor.
 * **Data holder managers**<br/>
-Data holder managers monitor the Data holder Vaults. They report to the Data manager if any of the chunks are corrupted or changed. They also report when a Data holder has gone offline.
+Data holder managers überwachen die Data holder Vaults. Sie berichten dem Data Manager wenn Datenteile korrupt oder verändert sind. Sie berichten ausserdem wenn ein Data Holder offline geht.
 * **Vault managers**<br/>
-The Vault manager keeps the software updated and the Vault running; restarting it on any error.
+Der Vault Manager hält die Software aktuell und den Vault am Laufen und startet ihn im Fehlerfall neu.
 * **Transaction managers**<br/>
-The Transaction manager helps to manage safecoin tranfers.
+The Transaction manager hilft die Safecoin Transfers zu verwalten.
 
-## Data on the SAFE Network
+## Daten im SAFE Network
 
-There are 2 mechanisms utilised by the network that authorise an End User to carry out certain actions via the Client. Authority is obtained by group consensus whenever a Client is putting (storing) new data. Alternatively, [cryptographic signatures](http://en.wikipedia.org/wiki/Digital_signature) are used if the Client is amending already stored data (a version) or sending safecoin, for example.
+Es werden 2 Mechanismen vom Netzwerk verwendet die die den Client des Benutzer dazu authorisieren bestimmte Aktionen durchführen zu dürfen. Autorität wird immer dann durch Gruppen Konsens erreicht wenn ein Client neue Daten speichert. Alternativ werden [Digitale Signaturen](https://de.wikipedia.org/wiki/Digitale_Signatur) verwendet wenn der Client z.B. bereits bestehende Daten ergänzt (eine Version) oder Safecoins sendet.
 
-** Group Consensus**<br/>
-When an End User attempts to put a new piece of data, the file is encrypted and broken up into chunks as part of the self encryption process, it is passed to a close group of Client managers. This close group are comprised of the closest vault IDs to the users vault ID in terms of [XOR](http://en.wikipedia.org/wiki/Exclusive_or) distance. This is distance measured in the mathematical sense as opposed to the geographical sense. At least twenty eight of the thirty two Client managers much reach consensus before any network operations are carried out.
+** Gruppen Konsens**<br/>
+Wenn ein Benutzer versucht neue Daten zu speichern, wird die Datei im Rahmen des Selbstverschlüsselungsprozess verschlüsselt und in Teile aufgesplittet und dann an eine Gruppe von Client Managern in der Nähe gesendet. Diese in der Nähe befindliche Gruppe besteht aus den vault IDs die am nächsten zur Vault ID des Benutzers sind, im Sinne von [Kontravalenz](https://de.wikipedia.org/wiki/Kontravalenz). Diese Distanz wird im mathematischen Sinne, nicht im geografischen, gemessen. Mindestens 28 der 32 Client manager müssen zu einem Konsens kommen bevor jegliche Netzwerk Operation durchgeführt wird.
 
-The Client managers then pass the chunks to thirty two Data managers, chosen by the network as their IDs are closest to the IDs of the data chunk, so the chunk ID also determines it's location on the network.
+Der Client Manager gibt die Datenteile zu 32 Data Managern, ausgewählt durch das Netzwerk da ihre IDs am nächsten zu den IDs der Datenteile sind. Demnach legt die Datenteile ID auch die Lage im Netzwerk fest.
 
-The network utilises a Scatter/Gather approach, based on [Rabin’s Information Dispersal Algorithm](http://people.seas.harvard.edu/~salil/rabin2011-slides/rabin2011-mitzenmacher.pdf), enabling small data loss (up to 4 pieces) without the requirement to retransmit data
+Das Netzwerk nutzt einen Streu/Sammel Ansatz (Scatter/Gather), basierend auf [Rabin’s Information Dispersal Algorithm](http://people.seas.harvard.edu/~salil/rabin2011-slides/rabin2011-mitzenmacher.pdf) der einen Datenverlust von bis zu 4 Teilen möglich macht ohne das Daten neu übertragen werden müssen.
 
-Once consensus is reached, the Data manager passes the chunks to thirty two Data holder managers, who in turn pass the chunks for storage with Data holders. If a Data holder manager reports that a Data holder has gone offline, the Data manager decides, based on rankings assigned to Vaults, into which other Vault to put the chunk of data.
+Sobald es zu einem Konsens gekommen ist gibt der Data Manager die Datenteile an 32 Data holder Manager weiter. Dieser wiederum geben die Datenteile zum Speichern an die Data Holder weiter. Wenn ein Data Holder Manager einen Data Holder als offlne meldet entscheidet der Data Manager, basierend auf dem Rang der dem Vault zugeordnet ist, in welchem Vault die Datenteile gespeichert werden soll.
 
-This way the chunks of data from the original file are constantly being monitored and supported to ensure the original data can be accessed and decrypted by the original user.
+Auf diesem Weg werden die Datenteile der Original Datei konstant überwacht und unterstützt um sicherzustellen das der Benutzer die Original Daten entschlüsseln und auf die zugreifen kann.
 
-Any movement of data chunks can only be made if there is a consensus (28 of 32) from the surrounding Vaults. The Vaults cannot act in isolation.
+Jede Bewegung von Datenteile kann nur mit einem Konsens von 28 der 32 umgebenden Vaults gemacht werden. Die Vaults können nicht Abgeschiedenheit handeln.
 
-All communications on the SAFE Network are carried out through close groups of 32 nodes. This prevents a rogue node(s) from behaving maliciously. It is not possible for a user to choose their own node ID, or to decide where their data is stored, this is calculated by the network. Every time a node disconnects from the network and reconnects, it is assigned a totally new and random ID.
+Jedwede Kommunikation im SAFE Netzwerk wird durch zusammenliegende Gruppen von 32 Nodes ausgeführt. Das hindert Schurken Node(s) daran sich bösartig zu verhalten. Es ist für einen Benutzer nicht möglich sich eine eigene ID auszusuchen oder zu entscheiden wo seine Daten gespeichert werden - das wird vom Netzwerk berechnet. Jedes Mal wenn ein Node vom Netzwerk getrennt wird und sich wieder verbindet, bekommt es eine neue und zufälige ID.
 
-[Click here to see a short video on how Vaults work](https://www.youtube.com/watch?v=txvKSeCaEP0)
 
-** Cryptographic Signatures**<br/>
-When End Users are making changes to existing data, such as changing the content of a file, or sending another End User safecoin, the network does not use group consensus as this layer of complexity and increased network load is not required.
+[Klicke hier für ein kurzes Video wie Vaults funktionieren (english)](https://www.youtube.com/watch?v=txvKSeCaEP0)
 
-Cryptographic signatures mathematically validate the owner of any piece of data and can prove this beyond any doubt, provided the End User has kept their private key safe. If the End User is the owner of any piece of data and can prove this, by digitally signing their request with their private key, the network permits them access to change the data.
+** Kryptographische Signaturen**<br/>
+
+Wenn Benutzer Änderungen an existierenden Daten vornehmen, z.b. den Inhalt einer Datei ändern oder einem anderen Benutzer Safecoin senden, so nutzt  das Netzwerk nicht den Gruppen Konsens da dieser Layer an Komplexität und erhöhte Netzwerk Last nicht erforderlich ist.
+
+Kryptographische Signaturen können ohne Zweifel den Besitzer von jeglichen Daten mathematisch validieren, vorausgesetzt der Benutzer hat seinen privaten Schlüssel sicher verwahrt. Wenn der Benutzer den Besitz an einer Datei nachweisen kann in dem der seine Anfrage mit seinem privaten Schluessel signiert, so gewährt ihm das Netzwerk Zugriff um die Daten zu verändern.
 
