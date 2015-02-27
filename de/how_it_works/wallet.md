@@ -1,10 +1,10 @@
-# Wallet
-The SAFE Network wallet is a place that holds the credits and the credit change history for an account.
+# Geldbörse
+Die SAFE Netzwerk Geldbörse ist ein Ort der das Guthaben und die Guthaben Entwicklung eines Kontos enthält.
 
-When a user joins the SAFE Network, they automatically have a wallet. As a reward for providing resources for the SAFE Network, they receive safecoins. These safecoins are stored in the user's wallet.
+Wenn ein Benutzer dem SAFE Netzwerk beitritt hat er automatisch eine Geldbörse. Als eine Belohnung für das Bereitstellen von Resourcen zum SAFE Netzwerk erhält er Safecoins. Diese Safecoins werden in der Geldbörse des Benutzers gespeichert.
 
-These safecoins can then be used to buy more resources, applications, or traded for other digital currencies or cash through an exchange service.
+Diese Safecoins können dann benutzt werden um mehr Resourcen oder Programme zu kaufen, oder um gegen andere digitale Währungen oder Geld an einer Börse getauscht zu werden.
 
-A user can view the contents of their wallet through the MaidSafe client.
+Ein Benutzer kann den Inhalt seiner Geldbörse im SAFE client sehen.
 
-When safecoins are transferred from one wallet to another, the transfer is a process of signing over ownership (with the private key) to the other user. The SAFE Network confirms the transfer via the Transaction managers and coin holders, who all require collaboration and agreement that the transaction is valid.
+Wenn Safecoins von einer von einer Geldbörse zur anderen transferiert werden, wird der Besitzübergang durch ein signieren mit dem privaten Schlüssel zum anderen Benutzer erledigt. Das SAFE Netzwerk bestätigt den Transfer durch den Transaction Manager und Safecoin Holder, die alle Zusammenarbeit und Einigung erfordern damit die Transaktion gültig ist. 

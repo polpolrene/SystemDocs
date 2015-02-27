@@ -1,9 +1,9 @@
-# Securing the SAFE Network
+# Das SAFE Netzwerk absichern
 
-The SAFE Network, like any network that handles data and important information, is open to attack. These attacks could be for malicious reasons or, more typically, for financial gain.
+Das SAFE Netzwerk, wie jedes andere Netzwerk das Daten und wichtige Informationen handhabt, ist offen für Angriffe. Diese Attacken können bösartige Gründe haben, oder  typischerweise zum finanziellen Vorteil.
 
-If an attacker can access a user's data and even decrypt their files, they could then request payment to prevent deleting or selling-on  the user's data.
+Wenn ein Angreifer auf die Daten eines Benutzers zugreifen und sie sogar entschlüsseln kann, so könnte er eine Zahlung verlangen um eine Löschung oder einen Weiterverkauf der Daten zu verhindern.
 
-The SAFE Network has been designed to resist, or completely remove, the potential damage that can be caused by the most common attack methods.
+Das SAFE Netzwerk wurde entworfen um den potentiellen Schaden der durch die gängigsten Angriffe entstehen kann, zu widerstehen oder ihn komplett zu entfernen.
 
-Security improvements to the SAFE Network are constantly being developed and enhanced.
+Sicherheitsverbesserung zum SAFE Netzwerk werden konstant entwickelt und verbessert.

@@ -1,10 +1,10 @@
-# How to use it
+# Wie man es benutzt
 
-This section explains the role of different users and how they interact with, and build, the SAFE Network. To do this, users may take on one or more of the following roles:
+Diese Sektion erklärt die Rollen der verschiedenen Benutzer, wie diese miteinander interagieren und wie sich das SAFE Netzwerk aus Ihnen zusammensetzt. Um das zu erreichen können eine oder mehrere der folgenden Rollen annehmen.
 
-* A Farmer
-* An End User
-* An App Builder
-* A Core Developer
+* Ein Farmer
+* Ein Benutzer
+* Ein Programm Entwickler
+* Ein Entwickler des SAFE Netzwerk
 
 
