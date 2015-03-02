@@ -1,9 +1,9 @@
-# Securing the SAFE Network
+# Het SAFE Netwerk beveiligen
 
-The SAFE Network, like any network that handles data and important information, is open to attack. These attacks could be for malicious reasons or, more typically, for financial gain.
+Het SAFE Netwerk, net als elke netwerk dat data en belangrijke informatie afhandeld, kan worden aangevallen. Deze aanvallen kunnen met slechte intentie of, veel voorkomend, voor financiele winst. 
 
-If an attacker can access a user's data and even decrypt their files, they could then request payment to prevent deleting or selling-on  the user's data.
+Als een aanvaller toegang kan krijgen tot een gebruiker's data en bestanden kan ontsleutelen, dan kunnen ze vragen om tegen betaling het verwijderen of doorverkopen van gebruikers data te voorkomen. 
 
-The SAFE Network has been designed to resist, or completely remove, the potential damage that can be caused by the most common attack methods.
+Het SAFE Network is ontworpen om bestand, of compleet, potentiele schade tegen te gaan van veel voorkomende aanvals methodes.
 
-Security improvements to the SAFE Network are constantly being developed and enhanced.
+Beveiligings toepassingen worden constant ontwikkeld en verbetert voor het SAFE Netwerk. 
