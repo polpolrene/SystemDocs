@@ -1,19 +1,21 @@
-# Dishonest Vault attack
+# Oneerlijke kluis aanval
 
-##Attack description
+##Beschrijving aanval
 
-In this attack, a Vault falsely claims to offer a higher storage capacity than it actually has available.
+In dit aanvals scenario, claimt een kluis vals dat het een hogere opslag capaciteit kan aanbieden dan werkelijk beschikbaar is. 
 
-##Attack purpose
+##Aanvals doel
 
-The purpose of this attack is to gain the ability to join particular areas of the SAFE Network and to create fake rules affecting it's behaviour, similar to the "50% attack" often seen in cryptographic currencies.
+Het doel van dit aanval is om de mogelijkheid te krijgen tot bepaalde regio's op het SAFE Netwerk en valse regels te creeren om het netwerk gedrag aan te tasten, vergelijkbaar met het "51 attack" vaak gezien bij cryptografische gelden.
 
-In large scale attacks of this kind, considerable damage to the SAFE Network would be possible including theft or double spend of safecoins, or the deletion of data.
+In een grootschalige aanvallen van dit soort, maakt significante beschadigen van het SAFE Netwerk mogelijk, met als gevolg diefstal en dubbel spenderen van safecoins, of verwijdering van data. 
 
-The goal of this may be simply to destroy user trust in the SAFE Network.
 
-##Attack avoidance
+Een doel hiervan kan simpelweg het wegnemen van gebruikers hun vertrouwen in het SAFE Netwerk.
 
-The SAFE Network requires a quorum level of legitimate Vaults to be instructed in order for a request to be accepted, which mitigates the risk of this attack.
+##Aanval preventie
 
-A botnet or other group of malicious Vaults would require to make up around 75% of the whole SAFE Network to achieve false quorum over invalid requests, making a successful attack of this type very unlikely.
+Het SAFE Netwerk vereist een quorum niveau van legitieme kluizen om instruties te krijgen voordat ze een verzoek accepteren, dit verlicht het risico van dit aanval. 
+
+
+Een botnet of vergelijkbare groepen kwaadaardige kluizen moeten bestaan uit 75% van het hele SAFE Netwerk om valse quorum te krijgen over ongeldige verzoeken, waardoor een sucessvolle aanval van dit soort onwaarschijnlijk is. 
