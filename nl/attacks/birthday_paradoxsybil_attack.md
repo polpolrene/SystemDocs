@@ -1,20 +1,21 @@
-# Birthday Paradox/Sybil attack
+# Geboortedatum Paradox/Sybil aanval
 
-##Attack description
-In this attack, an attacker ﬂoods the network with Vaults it controls, to surround a single Vault with 3 or more malicious Vaults in order to exert control over that Vault.
+##Aanval beschrijving
+Met dit aanval, overspoelt een aanvaller het netwerk met kluizen waarover men controle heeft, door een kluis te omringen met 3 of meerdere kwaadaardige kluizen om controle uit te oefenen over dat kluis. 
 
-##Attack purpose
+##Aanvals doel
 
-Using this case, an attacker could request deletion of data chunks by acting as Data managers with the controlled Vaults. This could cause the Data holders to delete the chunks in response to a seemingly legitimate request, and prevent access to that data for legitimate users.
+In zo'n scenario, kan een aanvaller verwijdering van data snippertjes verzoeken door als data managers te fungeren over het onder controle genomen kluis. Dit zorgt dat de Data houders het snippertje verwijderen als reactie op wat een legitieme verzoek lijkt en voorkomt toegang tot dat data door een legitieme gebruiker. 
 
-While it is not possible to deliberately position the malicious Vaults around a desired point in the SAFE Network, with around 0.8% of the network’s Vaults under the (temporary) control of an attacker, it is likely the attacker will have at least one Vault surrounded on the SAFE Network, allowing it to exert control over that Vault and reach quorum on such false actions.
+Terwijl het niet mogelijk is opzettelijk kwaadaardige kluizen te positioneren binnen een bepaald punt in het SAFE Netwerk, met ongeveer 0.8% van de kluizen in het netwerk onder (tijdelijke) controle van een aanvaller, is het mogelijk dat de aanvaller in ieder geval 1 kluis omringd op het SAFE netwerk, waardoor men controle kan uitoefenen op die kluis en quorum kan bereiken onder valse acties.
 
-##Attack avoidance
 
-The SAFE Network requires all requests be processed by at least two groups of Vaults.
+##Aanval ontwijking
 
-A MaidSafe client passes a request to its 4 Data managers, who verify the request based on the client’s signature. The request is then passed to a deterministically selected group of 4 other Vaults which also verify the request based on its signature.
+Het SAFE Netwerk vereist dat alle verzoeken verwerkt worden door twee groepen van kluizen. 
 
-By deterministically selecting the second group of Data managers, this attack no longer holds true for the SAFE Network, since it is not possible for the attacker to gain control over a Vault by simply surrounding it.
+Een Maidsafe client geeft een verzoek aan 4 Data managers, die verifiëren het verzoek gebaseerd op een client's handtekening. Het verzoek wordt doorgegeven aan gedetermineerd geselecteerde groep van 4 kluizen, die verifiëren of het verzoek is gebaseerd op de client's handtekening. 
 
-To circumvent this, the attacker would require the ability to surround speciﬁc Vaults in the SAFE Network. This cannot be achieved, as it would require being able to effectively generate different values which, when hashed with SHA-512, result in close hashes around one particular point.
+Door gedetermineerd selecteren van het tweede groep Data managers, is dit aanval niet meer waar voor het SAFE Netwerk, gezien een aanvaller geen controle kan krijgen over een kluis, door deze te omringen.  
+
+Om dit te omzeilen, zou de aanvaller de mogelijkheid moeten hebben om specifieke kluizen te omringen in het SAFE Netwerk. Dit kan niet bereikt worden, omdat van een aanvaller is vereist dat men effectief verschillende waarde genereert, die gehasht met SHA-512, resulteren in een gesloten hashes rond om 1 bepaalde punt.
